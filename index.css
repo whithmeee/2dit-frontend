@@ -951,6 +951,7 @@ body {
     .containers2 {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: -487px;
     }
 
     .block4 > h2 {
@@ -991,7 +992,7 @@ body {
         -o-background-size: cover;
         -webkit-background-size: cover;
         height: 100vh;
-        margin-top: -211px;
+        margin-top: -186px;
         background-size: 86%;
         position: relative;
         left: 9px;
@@ -1072,7 +1073,7 @@ body {
         height: 100vh;
         background-size: 85%;
         position: relative;
-        top: -234px;
+        top: -212px;
         left: -13px;
     }
 
