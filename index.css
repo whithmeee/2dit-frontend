@@ -557,15 +557,18 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .containers {
-        display: grid;
-        grid-template-columns: 500px 500px;
+        display: flex;
+        flex-direction: column;
     }
 
     .block2 {
         overflow: hidden;
         background: url(./img/jason.svg) no-repeat center;
         z-index: 2;
-        background-size: 82%;
+        background-size: 76%;
+        position: relative;
+        top: -49px;
+        height: 100vh;
     }
 
     .block1 > span {
@@ -607,19 +610,7 @@ body {
     }
 
     .block2 > div > h2 {
-        font-family: 'HelveticaNeueCyr';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 150%;
-        display: flex;
-        align-items: center;
-        right: -30px;
-        top: 68px;
-        position: relative;
-        text-transform: uppercase;
-        color: #fff;
-        bottom: -86px;
+        display: none;
     }
 }
 
@@ -634,7 +625,7 @@ body {
         font-family: 'HelveticaNeueCyr';
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 21px;
         line-height: 150%;
         position: absolute;
         display: flex;
@@ -651,8 +642,8 @@ body {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        width: 520px;
-        height: 360px;
+        width: 367px;
+        /* height: 360px; */
         position: relative;
         top: 42px;
         color: #000000;
@@ -665,7 +656,7 @@ body {
     .line::before {
         content: '';
         position: absolute;
-        height: 276px;
+        height: 326px;
         left: -29px;
         top: 56.89px;
         border: 1px solid #000000;
@@ -678,7 +669,11 @@ body {
         background-size: 86%;
         height: 100vh;
         position: relative;
-        top: -208px;
+        top: -169px;
+    }
+
+    .block2 > div > h2 {
+        display: none;
     }
 }
 
@@ -692,12 +687,12 @@ body {
         font-family: 'HelveticaNeueCyr';
         font-style: normal;
         font-weight: 400;
-        font-size: 22px;
+        font-size: 17px;
         line-height: 150%;
         position: absolute;
         display: flex;
         align-items: center;
-        top: 27px;
+        top: 28px;
         text-transform: uppercase;
         left: 28px;
         z-index: 2;
@@ -712,10 +707,10 @@ body {
         height: 360px;
         position: relative;
         top: 37px;
+        width: 315px;
         color: #000000;
         margin-left: 30px;
         line-height: 1.5rem;
-        word-wrap: break-word;
     }
 
     .block1::before {
@@ -735,9 +730,9 @@ body {
     .line::before {
         content: '';
         position: absolute;
-        height: 275px;
-        left: -15px;
-        top: 44.89px;
+        height: 321px;
+        left: -14px;
+        top: 49.89px;
         border: 1px solid #000000;
     }
 
@@ -745,26 +740,16 @@ body {
         overflow: hidden;
         background: url(./img/jason.svg) no-repeat center;
         z-index: 2;
-        height: 100vh;
-        background-size: 90%;
         position: relative;
-        top: -276px;
+        /* margin-top: 15px; */
+        height: 100vh;
+        background-size: 95%;
+        position: relative;
+        top: -230px;
+        left: 17px;
     }
 
     .block2 > div > h2 {
-        font-family: 'HelveticaNeueCyr';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 150%;
-        display: flex;
-        align-items: center;
-        right: 20px;
-        top: -13px;
-        position: relative;
-        text-transform: uppercase;
-        color: #fff;
-        bottom: -86px;
         display: none;
     }
 }
