@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+    .container {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        margin-top: 36rem;
+    }
+
+    .parent1 {
+        padding: 10;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        flex-direction: column;
+    }
+    .wrapper {
+        margin-top: 35rem;
+    }
+}
+

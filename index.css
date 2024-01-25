@@ -3,15 +3,17 @@ body {
     padding: 0;
     box-sizing: border-box;
     border: none;
+    font-family: 'Lato', sans-serif;
 }
 * {
     list-style: none;
 }
 .container {
     display: flex;
-    width: 70%;
+    max-width: 1200px;
     height: 460px;
     margin: 50px auto;
+    justify-content: space-between;
 }
 
 .parent1 {
@@ -20,7 +22,7 @@ body {
 
 .parent2 {
     padding: 30px;
-    margin-top: 30px;
+   
 }
 
 .parent1 > div > h1 {
@@ -75,24 +77,16 @@ body {
     line-height: 1.5rem;
 }
 
-@media (min-width: 500px) {
-    .container,
-    .parent1 {
-        justify-content: space-between;
-        font-size: 14px;
-    }
 
-    .parent1 {
-        padding: 10;
-    }
-}
 
 /* задание 2 */
 
 .wrapper {
     max-width: 942px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
     gap: 36px;
     margin-top: 10rem;
@@ -1125,6 +1119,10 @@ body {
     color: #ffffff;
 }
 
+.form-block > form  {
+    display: flex;
+}
+
 .form-block > form > input {
     box-sizing: border-box;
 
@@ -1140,7 +1138,7 @@ body {
     margin-right: 5px;
     position: relative;
     padding-left: 48px;
-    width: 428px;
+    max-width: 100%;
 }
 
 .form-number {
